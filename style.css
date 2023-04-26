@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top_logo{
+
+}
+.top_logo img{
+    max-width: 100%;
+}
+
+.header{
+    background-color: #2062ae;
+    color: white;
+    text-align: left;
+    padding: 0px;
+    width: 100%;
+}
+.header h2{
+    margin: 0;
+    padding-top: 10px;
+    font-size: 50px;
+}
+.header h3{
+    margin: 0;
+    padding: 5px;
+}
+
+
+
+
+
+.print_box{
+    box-shadow: 0px 1px 4px #333;
+    max-height: 1000px;
+    height: 1000px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.print_box p{
+    color: #0f77ee;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+.left_side{
+    box-shadow: 0px 1px 4px #333;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.left_side button{
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+.Main_Left_Side{
+    float: left;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+.Input_Box{
+    max-width: 5in;
+    height: 3.8in;
+    border: 1px solid #333;
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 20px 0px #6d6d6d;
+    margin-bottom: 10px;
+}
+
+.Input_Title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #1e7ae2;
+}
+.All_Input_Item{
+    display: inline-block;
+    padding: 10px;
+    /* margin: 10px; */
+}
+.All_Input_Item p{
+    font-size: 20px;
+    font-weight: bold;
+    /* padding: 10px; */
+    margin-top: 10px;
+}
+.input_item{
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    color: #2062ae;
+    text-shadow: 1px 0px 0px #333;
+    letter-spacing: 3px;
+}
+
+.Submit_btn{
+    width: 5in;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #2062ae;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 1000ms;
+}
+.Submit_btn:hover{
+    background-color: #1e7ae2;
+    color: black;
+    cursor: pointer;
+    /* margin-top: 20px; */
+}
+.Print_btn{
+    width: 6.5in;
+    margin-top: 20px;
+    display: block;
+}
+
+
+
+/* =============== */
+/* Design side  */
+.Main_Right_Side{
+    float: right;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: contents;
+}
+
+
+.Print_Section{
+    max-width: 6.5in;
+    max-height: 4.5in;
+    display: block;
+    overflow: hidden;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0px 0px 5px 0px #6d6d6d;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.Title{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.Left_Side{
+    float: left;
+    width: 55%;
+    margin-right: 5px;
+}
+.Logo{
+    max-width: 100%;
+}
+.Right_Side{
+    float: right;
+    width: 45%;
+    padding-left: 5px;
+    border-left: 3px solid #2062ae;
+}
+.AgentBanking{
+    color: #2062ae;
+    font-weight: bold;
+    font-size: 20px;
+}
+.Address{
+    font-weight: bold;
+    font-size: 18px;
+    color: #2a4a6f;
+}
+
+.Ac_Info{
+    text-align: center;
+    background-color: #2062ae;
+    padding: 5px;
+    color: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Dynamic_Text{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+table{
+    width: 100%;
+    background-color: white;
+}
+tr{
+    padding: 5px;
+}
+td{
+    padding: 5px;
+}
+.AC_Title, .AC_No, .AC_Mobile_No{
+    padding: 5px;
+}
+table, tr, td{
+    border: 2px solid #2062ae;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+.Dynamic_AC_Info{
+    /* color: #2062ae; */
+    background-color: white;
+    text-shadow: 1px 0px 0px #333;
+    letter-spacing:2px;
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.Emergency_Text{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+/* =============== */
+/* print css  */
+
+@page {
+	size: auto;
+	margin-top: 20px;
+}
+
+
+
+
+/* pritn css */
+@media print {
+    /* .print_box{
+        box-shadow: 0px 0px 0px white;
+    }
+    body{
+        box-shadow: 0px 0px 0px white;
+    }
+
+    .Print_Section{
+        width: 500px;
+        height: 50px;
+        background-color: #1e7ae2;
+    } */
+    /* @page :footer {
+        display: none
+    }
+ 
+    @page :header {
+        display: none
+    } */
+  }
+
+
+  @page {
+	width: 8.69in;
+    height: 11.69in;
+    
+}
