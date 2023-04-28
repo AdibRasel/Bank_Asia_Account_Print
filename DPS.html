@@ -34,8 +34,8 @@
         <div class="Top_Menu_Section">
           <a href="./index.html">Home</a>
           <a href="./AC_Print.html">Account Print</a>
-          <a href="./Remittance_Calculation.html" class="Active">Remittance Calculation</a>
-          <a href="./DPS.html">DPS</a>
+          <a href="./Remittance_Calculation.html">Remittance Calculation</a>
+          <a href="#" class="Active">DPS</a>
           <a href="./FDR.html">FDR</a>
           <a href="https://bank-asia.netlify.app/" target="_blank">Public Home</a>
         </div>
@@ -47,41 +47,36 @@
     <section>
         <div class="Boxs">
             <div class="Boxs_Left">
-                <label for="">Remittance Calculation <span id="InterestRateShow">(2.50)%</span></label> <br>
-                <input id="RemittanceTaka" type="number" placeholder="Remittance Calculation" class="form-control">
-                
-                <select id="InterestRate" class="form-select" onchange="OnchangeInterestRate()">
-                    <option value=".50">.50</option>
-                    <option value="1">1</option>
-                    <option value="1.50">1.50</option>
-                    <option value="2">2</option>
-                    <option selected value="2.50">2.50</option>
-                    <option value="3">3</option>
-                    <option value="3.50">3.50</option>
-                    <option value="4">4</option>
-                    <option value="4.50">4.50</option>
-                    <option value="5">5</option>
-                    <option value="5.50">5.50</option>
-                    <option value="6">6</option>
-                    <option value="6.50">6.50</option>
-                    <option value="7">7</option>
-                    <option value="7.50">7.50</option>
-                    <option value="8">8</option>
-                    <option value="8.50">8.50</option>
-                    <option value="9">9</option>
-                    <option value="9.50">9.50</option>
-                    <option value="10">10</option>
-                </select>
-                
+                <label>Monthly DPS Taka</label><br>
+                <input id="DPSTaka" type="number" placeholder="DPS Taka" class="form-control">
 
-                <button onclick="RemittanceCalculation()" class="btn btn-primary">Submit</button>
+                <input id="InterestRate" type="number" placeholder="Interest Rate">
+
+                <select id="DPSYear">
+                    <option value="1">1 Year</option>
+                    <option value="2">2 Year</option>
+                    <option value="3">3 Year</option>
+                    <option value="4">4 Year</option>
+                    <option selected value="5">5 Year</option>
+                    <option value="6">6 Year</option>
+                    <option value="7">7 Year</option>
+                    <option value="8">8 Year</option>
+                    <option value="9">9 Year</option>
+                    <option value="10">10 Year</option>
+                    <option value="11">11 Year</option>
+                    <option value="12">12 Year</option>
+                </select>
+
+               
+
+                <button onclick="DPSButton()" class="btn btn-primary">Submit</button>
             </div>
             <div class="Boxs_Right">
-                Total Remittance : <span id="Total_Remittance"> </span><br>
-                Total Interest : <span id="Total_Interest"> </span><br>
+                প্রতি মাসেঃ <span id="Monthltk"> </span> টাকা। <br>
+                <span id="YearTk"> </span> বছরে মোটঃ <span id="DPSTotalTaka"> </span> টাকা। <br>
                 <hr>
-                <b>Total Taka</b> : <span id="Total_Taka"> </span><br>
-                <b>Spelling</b> : <span id="Spelling"> </span>
+                মোট লাভ <span id="DPSBonus"> </span> টাকা। <br>
+                মোট লাভ সহ <span id="DPSInTotalTaka"> </span> টাকা। <br>
 
                 
                 

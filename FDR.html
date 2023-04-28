@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Asia Account Print</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <boostrap> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- </boostrap> -->
+</head>
+<body class="BG">
+  
+    <header class="header">
+        <div class="top_logo">
+            <a href="./index.html">
+                <img src="./Bank_Asia_Logo_Print.jpg" alt="">
+            </a>
+        </div>
+
+        <div class=" title_right">
+            <h2>Bank Asia</h2>
+            <h3>Shahapur Bazar, Chatkhil, Noakhali.</h3>
+            <h3>Our Office Page</h3>
+        </div>
+    </header>
+
+
+
+    <section>
+        <div class="Top_Menu_Section">
+          <a href="./index.html">Home</a>
+          <a href="./AC_Print.html">Account Print</a>
+          <a href="./Remittance_Calculation.html">Remittance Calculation</a>
+          <a href="./DPS.html">DPS</a>
+          <a href="#" class="Active">FDR</a>
+          <a href="https://bank-asia.netlify.app/" target="_blank">Public Home</a>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <div class="Boxs">
+            <div class="Boxs_Left">
+                <label>FDR Total Taka</label>
+                <input id="FDRTaka" type="number" placeholder="FDR Total Taka" class="form-control">
+                <input id="FDRRate" type="number" placeholder="FDR Rate">
+
+                <select id="FDRTime">
+                    <option selected value="3">3 Month</option>
+                    <option value="6">6 Month</option>
+                    <option value="1">1 Year</option>
+                    <option value="2">2 Year</option>
+                    <option value="3">3 Year</option>
+                    <option value="6">6 Year</option>
+                    <option value="7">7 Year</option>
+                    <option value="8">8 Year</option>
+                    <option value="9">9 Year</option>
+                    <option value="10">10 Year</option>
+                    <option value="11">11 Year</option>
+                    <option value="12">12 Year</option>
+                </select>
+
+                <button onclick="FDRButton()" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="Boxs_Right">
+                মোটঃ <span id="TotalTk"> </span> টাকা। <br>
+                <hr>
+                মোট লাভঃ <span id="TotalInterest"> </span> টাকা। <br>
+                লাভ সহ মোটঃ <span id="InTotalInterest"> </span> টাকা।
+            </div>
+        </div>
+    </section>
+
+
+
+
+   
+
+
+
+
+
+    <section class="BG_light">
+      <div class="Footer">
+        © 2023. All rights reserved by 
+        <a href="https://adibrasel.github.io/My_Portfolio/" class="text-bold" target="_blank">
+            Rasel Hossain
+        </a>
+      </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

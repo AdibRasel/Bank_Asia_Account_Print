@@ -390,6 +390,8 @@ table, tr, td{
 .Footer{
     padding: 50px;
     text-align: center;
+    /* margin-top: 100px; */
+    /* padding-top: 100px; */
 }
 
 
@@ -398,46 +400,49 @@ table, tr, td{
 
 
 /* Remittance Calculation start */
-.RM{
+.Boxs{
     display: flex;
     background-color: #ffffffeb;
     width: 80%;
     margin: auto;
     padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
 }
-.RM_Left{
+.Boxs_Left{
     box-shadow: 0px 0px 5px 2px #333;
     padding: 50px;
     border-radius: 10px;
     margin: auto; 
 }
-.RM_Left:hover{
+.Boxs_Left:hover{
     box-shadow: 0px 0px 10px 1px #20c1d6;
 }
-.RM_Left button{
+.Boxs_Left button{
     width: 100%;
     margin-top: 10px;
 }
-.RM_Left select{
+.Boxs_Left select{
     margin-top: 5px;
 }
 
 
 
-.RM_Right{
+.Boxs_Right{
     box-shadow: 0px 0px 5px 2px #333;
     padding: 50px;
     border-radius: 10px;
     margin: auto;
 }
-.RM_Right:hover{
+.Boxs_Right:hover{
     box-shadow: 0px 0px 10px 1px #20c1d6;
 }
-.RM_Right span{
+.Boxs_Right span{
     font-weight: bold;
     font-size: 20px;
 }
-.RM_Right hr{
+.Boxs_Right hr{
     border: 1px solid #333;
 }
 

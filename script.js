@@ -59,6 +59,7 @@ function RemittanceCalculation(){
     let RemittanceTakaInput = document.getElementById("RemittanceTaka").value;
     let Equel = RemittanceTakaInput - 1;
     let RemittanceTaka = Equel + 1;
+
     let InterestRate = document.getElementById("InterestRate").value;
     let Interest = RemittanceTaka * InterestRate / 100;
     let Total_Taka = RemittanceTaka + Interest
@@ -87,13 +88,73 @@ function inWords (num) {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* Remittance Calculation end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DPS Calculation start*/
+function DPSButton(){
+    let DPSTakaInput = document.getElementById("DPSTaka").value;
+    let DPSTakaEquel = DPSTakaInput - 1
+    let DPSTaka = DPSTakaEquel + 1
+    let InterestRate = document.getElementById("InterestRate").value;
+    let DPSYear = document.getElementById("DPSYear").value;
+
+    let DPSTotalTaka = DPSTaka * DPSYear * 12;
+    let DPSBonus = DPSTotalTaka * InterestRate / 100;
+    let DPSInTotalTaka = DPSTotalTaka + DPSBonus;
+
+
+    document.getElementById("Monthltk").innerHTML = DPSTaka;
+    document.getElementById("YearTk").innerHTML = DPSYear;
+    document.getElementById("DPSTotalTaka").innerHTML = DPSTotalTaka;
+    document.getElementById("DPSBonus").innerHTML = DPSBonus;
+    document.getElementById("DPSInTotalTaka").innerHTML = DPSInTotalTaka;
+}
+
+
+/* DPS Calculation end*/
+
+
+
+
+
+
+
+
+/* FDR Calculation start*/
+function FDRButton(){
+    // input item 
+    let FDRTime = document.getElementById("FDRTime").value;
+    let FDRTaka = document.getElementById("FDRTaka").value;
+    let FDRRate = document.getElementById("FDRRate").value;
+
+    // show item
+    let TotalTk = document.getElementById("TotalTk").value;
+    let TotalInterest = document.getElementById("TotalInterest").value;
+    let InTotalInterest = document.getElementById("InTotalInterest").value;
+
+
+    
+
+
+}
+
+
+
+
+
+
+/* FDR Calculation end*/
+
+
