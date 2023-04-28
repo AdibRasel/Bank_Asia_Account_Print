@@ -60,11 +60,13 @@
                 <p>Account Information</p>
                 
                 <label>Account Number:</label>
-                <input id="AC_Title_Input" class="form-control" type="text" placeholder="Account Number"> <br>
+                <input id="AC_No_Input" class="form-control" type="number" placeholder="Account Number"> <br>
+
                 <label>Account Name:</label>
-                <input id="AC_No_Input" class="form-control" type="text" placeholder="Account Name"> <br>
+                <input id="AC_Title_Input" class="form-control" type="text" placeholder="Account Name"> <br>
+
                 <label>Mobile Number:</label>
-                <input id="AC_Mobile_No_Input" class="form-control" type="text" placeholder="Mobile Number"> <br>
+                <input id="AC_Mobile_No_Input" class="form-control" type="number" placeholder="Mobile Number"> <br>
                 
                 <button onclick="Submit()" class="btn btn-primary">Submit</button>
                 <button onclick="Print('Print_Section')" class="btn btn-primary">Print</button>
@@ -92,11 +94,11 @@
               <div class="Dynamic_Text Bg_white">
                 <table>
                   <tr>
-                    <td><div class="AC_Title Bg_white">A/C Title</div></td>
+                    <td><div class="AC_Title Bg_white">Account Name</div></td>
                     <td><div class="Dynamic_AC_Info" id='AC_Title_Show'></div></td>
                   </tr>
                   <tr>
-                    <td><div class="AC_No Bg_white">A/C No</div></td>
+                    <td><div class="AC_No Bg_white">Account Number</div></td>
                     <td><div class="Dynamic_AC_Info" id='AC_No_Show'></div></td>
                   </tr>
                   <tr>

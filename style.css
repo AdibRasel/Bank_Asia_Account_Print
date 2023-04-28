@@ -71,7 +71,11 @@
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    background: white;
+    background: #ffffffeb;
+    transition: 700ms;
+}
+.left_side:hover{
+    box-shadow: 0px 0px 10px 1px #20c1d6;
 }
 .left_side button{
     width: 100%;
@@ -177,8 +181,12 @@
     box-shadow: 0px 0px 5px 0px #6d6d6d;
     margin-top: 10px;
     border-radius: 10px;
-    background: white;
+    background: #ffffffeb;
     margin-bottom: 20px;
+    transition: 700ms;
+}
+.Print_Section:hover{
+    box-shadow: 0px 0px 10px 1px #20c1d6;
 }
 
 .Title{

@@ -11,22 +11,18 @@ function Submit(){
     
     // if(AC_Title_Input.length === 0 ){
     //     alert('Please enter correct name');
-    //   }else if(AC_No_Input.length < 1){
+    //   }else if(AC_No_Input.length <= 12 || AC_No_Input >=14){
     //     alert('Please enter the correct Account Number');
     //   }else if(AC_Mobile_No_Input.length <= 10 || AC_Mobile_No_Input.length  >= 12){
     //     alert('Please enter correct Mobile Number');
     //   }else{
-        // alert('Congratulations! you can print this account information.');
+    //     alert('Congratulations! you can print this account information.');
   
         document.getElementById("AC_Title_Show").innerHTML = AC_Title_Input;
         document.getElementById("AC_No_Show").innerHTML = AC_No_Input;
         document.getElementById("AC_Mobile_No_Show").innerHTML = AC_Mobile_No_Input;
         
     //   }
-
-
-
-
 
 
 
