@@ -2,11 +2,22 @@
     margin: 0;
     padding: 0;
 }
-.top_logo{
+.BG{
+    background-image: url("./BG.gif");
+}
+.Active{
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px 1px #20c1d6;
+    box-shadow: 0px 0px 10px 1px #20c1d6;
+}
 
+
+
+.top_logo{
+    width: 50%;
 }
 .top_logo img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .header{
@@ -15,6 +26,7 @@
     text-align: left;
     padding: 0px;
     width: 100%;
+    display: flex;
 }
 .header h2{
     margin: 0;
@@ -24,6 +36,12 @@
 .header h3{
     margin: 0;
     padding: 5px;
+}
+
+
+.title_right{
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -53,19 +71,13 @@
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+    background: white;
 }
 .left_side button{
     width: 100%;
     margin-bottom: 10px;
     
 }
-
-
-
-
-
-
-
 
 
 .Main_Left_Side{
@@ -157,7 +169,7 @@
 
 .Print_Section{
     max-width: 6.5in;
-    max-height: 4.5in;
+    /* max-height: 4.5in; */
     display: block;
     overflow: hidden;
     padding: 20px;
@@ -165,6 +177,8 @@
     box-shadow: 0px 0px 5px 0px #6d6d6d;
     margin-top: 10px;
     border-radius: 10px;
+    background: white;
+    margin-bottom: 20px;
 }
 
 .Title{
@@ -199,7 +213,7 @@
 
 .Ac_Info{
     text-align: center;
-    background-color: #2062ae;
+    /* background-color: #2062ae; */
     padding: 5px;
     color: white;
     width: 50%;
@@ -255,11 +269,15 @@ table, tr, td{
 
 
 
-
-
-
-
-
+.Print_Size{
+    box-shadow: 0px 0px 5px 0px #6d6d6d;
+    /* width: 500px;
+    height: 500px; */
+    margin: auto;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+}
 
 
 /* =============== */
@@ -275,30 +293,146 @@ table, tr, td{
 
 /* pritn css */
 @media print {
-    /* .print_box{
-        box-shadow: 0px 0px 0px white;
-    }
-    body{
-        box-shadow: 0px 0px 0px white;
-    }
 
-    .Print_Section{
-        width: 500px;
-        height: 50px;
-        background-color: #1e7ae2;
-    } */
-    /* @page :footer {
-        display: none
-    }
- 
-    @page :header {
-        display: none
-    } */
   }
 
 
-  @page {
+@page {
 	width: 8.69in;
     height: 11.69in;
     
 }
+
+
+
+.Top_Menu_Section{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
+    background-color: #337ab7ed;
+}
+
+.Top_Menu_Section a{
+    display: inline-block;
+    /* width: 200px;
+    height: 200px; */
+    background-color: #2062ae;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    transition: 700ms;
+    box-shadow: 0px 0px 5px 2px #333;
+}
+.Top_Menu_Section a:hover{
+    color: #2062ae;
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px #20c1d6;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+.BG_light{
+    background-color: #f5f5f5e3;
+}
+.Menu_Section{
+    width: 80%;
+    margin: auto;
+}
+
+.Menu_Section a{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #2062ae;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+    padding-top: 85px;
+    font-size: 20px;
+    transition: 700ms;
+    box-shadow: 0px 0px 5px 2px #333;
+}
+.Menu_Section a:hover{
+    color: #2062ae;
+    background-color: #ffffff00;
+    box-shadow: 0px 0px 10px 1px #20c1d6;
+    text-decoration: none;
+
+}
+
+
+
+.Footer{
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Remittance Calculation start */
+.RM{
+    display: flex;
+    background-color: #ffffffeb;
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+}
+.RM_Left{
+    box-shadow: 0px 0px 5px 2px #333;
+    padding: 50px;
+    border-radius: 10px;
+    margin: auto; 
+}
+.RM_Left:hover{
+    box-shadow: 0px 0px 10px 1px #20c1d6;
+}
+.RM_Left button{
+    width: 100%;
+    margin-top: 10px;
+}
+.RM_Left select{
+    margin-top: 5px;
+}
+
+
+
+.RM_Right{
+    box-shadow: 0px 0px 5px 2px #333;
+    padding: 50px;
+    border-radius: 10px;
+    margin: auto;
+}
+.RM_Right:hover{
+    box-shadow: 0px 0px 10px 1px #20c1d6;
+}
+.RM_Right span{
+    font-weight: bold;
+    font-size: 20px;
+}
+.RM_Right hr{
+    border: 1px solid #333;
+}
+
+
+
+/* Remittance Calculation end */

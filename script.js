@@ -48,3 +48,40 @@ function Print(DivName){
     // alert("Test")
 
 }
+
+
+
+/* Remittance Calculation start */
+
+function OnchangeInterestRate() {
+    var InterestRate = document.getElementById("InterestRate").value;
+    document.getElementById("InterestRateShow").innerHTML = "("+ InterestRate +")%";
+}
+
+
+function RemittanceCalculation(){
+    let RemittanceTakaInput = document.getElementById("RemittanceTaka").value;
+    let Equel = RemittanceTakaInput - 1;
+    let RemittanceTaka = Equel + 1;
+    let InterestRate = document.getElementById("InterestRate").value;
+    let Interest = RemittanceTaka * InterestRate / 100;
+    let Total_Taka = RemittanceTaka + Interest
+
+
+    document.getElementById("Total_Remittance").innerHTML = RemittanceTaka
+    document.getElementById("Total_Interest").innerHTML = Interest
+    document.getElementById("Total_Taka").innerHTML = Total_Taka
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* Remittance Calculation end */

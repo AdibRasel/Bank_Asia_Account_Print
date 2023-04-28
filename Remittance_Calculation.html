@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Asia Account Print</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <boostrap> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- </boostrap> -->
+</head>
+<body class="BG">
+  
+    <header class="header">
+        <div class="top_logo">
+            <a href="./index.html">
+                <img src="./Bank_Asia_Logo_Print.jpg" alt="">
+            </a>
+        </div>
+
+        <div class=" title_right">
+            <h2>Bank Asia</h2>
+            <h3>Shahapur Bazar, Chatkhil, Noakhali.</h3>
+            <h3>Our Office Page</h3>
+        </div>
+    </header>
+
+
+
+    <section>
+        <div class="Top_Menu_Section">
+          <a href="./index.html">Home</a>
+          <a href="./AC_Print.html">Account Print</a>
+          <a href="./Remittance_Calculation.html" class="Active">Remittance Calculation</a>
+          <a href="">Account Print</a>
+          <a href="">Account Print</a>
+          <a href="">Account Print</a>
+          <a href="">Account Print</a>
+          <a href="">Account Print</a>
+          <a href="https://bank-asia.netlify.app/" target="_blank">Public Home</a>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <div class="RM">
+            <div class="RM_Left">
+                <label for="">Remittance Calculation <span id="InterestRateShow">(2.50)%</span></label> <br>
+                <input id="RemittanceTaka" type="number" placeholder="Remittance Calculation" class="form-control">
+                
+                <select id="InterestRate" class="form-select" onchange="OnchangeInterestRate()">
+                    <option value=".50">.50</option>
+                    <option value="1">1</option>
+                    <option value="1.50">1.50</option>
+                    <option value="2">2</option>
+                    <option selected value="2.50">2.50</option>
+                    <option value="3">3</option>
+                    <option value="3.50">3.50</option>
+                    <option value="4">4</option>
+                    <option value="4.50">4.50</option>
+                    <option value="5">5</option>
+                    <option value="5.50">5.50</option>
+                    <option value="6">6</option>
+                    <option value="6.50">6.50</option>
+                    <option value="7">7</option>
+                    <option value="7.50">7.50</option>
+                    <option value="8">8</option>
+                    <option value="8.50">8.50</option>
+                    <option value="9">9</option>
+                    <option value="9.50">9.50</option>
+                    <option value="10">10</option>
+                </select>
+                
+
+                <button onclick="RemittanceCalculation()" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="RM_Right">
+                Total Remittance : <span id="Total_Remittance"> </span><br>
+                Total Interest : <span id="Total_Interest"> </span><br>
+                <hr>
+                Total Taka : <span id="Total_Taka"> </span><br>
+                Speling: <span id="Speling"></span>
+
+                
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+   
+
+
+
+
+
+    <section class="BG_light">
+      <div class="Footer">
+        © 2023. All rights reserved by 
+        <a href="https://adibrasel.github.io/My_Portfolio/" class="text-bold" target="_blank">
+            Rasel Hossain
+        </a>
+      </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
