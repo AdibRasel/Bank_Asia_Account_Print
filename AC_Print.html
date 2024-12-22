@@ -1,139 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Print</title>
-    <link rel="icon" type="image/x-icon" href="./AdibRasel.png">
-    <link rel="stylesheet" href="./style.css">
-    <!-- <boostrap> -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- </boostrap> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Expiry Notification</title>
+  <link rel="icon" type="image/x-icon" href="./AdibRasel.png">
+  <link rel="stylesheet" href="./style.css">
+  <!-- <boostrap> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- </boostrap> -->
+
+
+  <style>
+    .expiry-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50vh;
+      background: linear-gradient(to bottom right, #f8f9fa, #e9ecef69);
+    }
+
+    .cardAlart {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      padding: 20px;
+    }
+
+    .btn-primary {
+      background: #007bff;
+      border: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background: #0056b3;
+    }
+  </style>
+
+
+
 </head>
+
 <body class="BG">
-  
-    <header class="header">
-        <div class="top_logo">
-            <a href="./index.html">
-                <img src="./Bank_Asia_Logo_Print.jpg" alt="">
-            </a>
-        </div>
 
-        <div class=" title_right">
-            <h2>Bank Asia</h2>
-            <h3>Shahapur Bazar, Chatkhil, Noakhali.</h3>
-            <h3>Our Office Page</h3>
-        </div>
-    </header>
-
-
-
-    <section>
-        <div class="Top_Menu_Section">
-          <a href="./index.html">Home</a>
-          <a href="./AC_Print.html" class="Active">Account Print</a>
-          <a href="./Remittance_Calculation.html">Remittance Calculation</a>
-          <a href="./DPS.html">DPS</a>
-          <a href="./FDR.html">FDR</a>
-          <a href="https://bank-asia.netlify.app/" target="_blank">Public Home</a>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-    <div class="container">
-        
-            <!-- <div class="row print_box"> -->
-            <div class="col-md-5 left_side">
-                <p>Account Information</p>
-                
-                <label>Account Number:</label>
-                <input id="AC_No_Input" class="form-control" type="number" placeholder="Account Number"> <br>
-
-                <label>Account Name:</label>
-                <input id="AC_Title_Input" class="form-control" type="text" placeholder="Account Name"> <br>
-
-                <label>Mobile Number:</label>
-                <input id="AC_Mobile_No_Input" class="form-control" type="number" placeholder="Mobile Number"> <br>
-                
-                <button onclick="Submit()" class="btn btn-primary">Submit</button>
-                <button onclick="Print('Print_Section')" class="btn btn-primary">Print</button>
-
-            </div>
-
-
-
-          <div id="Print_Section" class="Print_Section Bg_white">
-            <div class="Print_Size">
-              <div class="Title Bg_white">
-                <div class="Left_Side Bg_white">
-                  <img class='Logo Bg_white' src="./Bank_Asia_Logo_Print.jpg" alt="Bank Asia" />
-                </div>
-                <div class="Right_Side Bg_white">
-                  <div class="AgentBanking Bg_white">Agent Banking</div>
-                  <div class="Address Bg_white">Shahapur Bazar, Chatkhil, Noakhali</div>
-                </div>
-              </div>
-        
-              <div class="Ac_Info">
-                <!-- Account Information -->
-                <img src="./Ac_Info.JPG" alt="">
-              </div>
-              <div class="Dynamic_Text Bg_white">
-                <table>
-                  <tr>
-                    <td><div class="AC_Title Bg_white">Account Name</div></td>
-                    <td><div class="Dynamic_AC_Info" id='AC_Title_Show'></div></td>
-                  </tr>
-                  <tr>
-                    <td><div class="AC_No Bg_white">Account Number</div></td>
-                    <td><div class="Dynamic_AC_Info" id='AC_No_Show'></div></td>
-                  </tr>
-                  <tr>
-                    <td><div class="AC_Mobile_No Bg_white">A/C Mobile No</div></td>
-                    <td><div class="Dynamic_AC_Info" id='AC_Mobile_No_Show'></div></td>
-                  </tr>
-                </table>
-              </div>
-              <div class="Emergency_Text Bg_white">
-                Routing Number : <strong class='Bg_white'>070270602</strong> <br />
-                Branch Name : <strong class='Bg_white'>Agent Banking</strong> <br />
-                Swift Code : <strong class='Bg_white'>BALBBDDH</strong> <br />
-                Emergency Contact : <strong class='Bg_white'>+8801711-055368, +8801720-126229</strong> <br>
-                E-mail : <strong class='Bg_white'>sahapurbazar.1946@gmail.com, borhanraju2008@gmail.com</strong>
-              </div>
-            
-            </div>
-
-
-          </div>
+  <header class="header">
+    <div class="top_logo">
+      <a href="./index.html">
+        <img src="./Bank_Asia_Logo_Print.jpg" alt="">
+      </a>
     </div>
 
+    <div class=" title_right">
+      <h2>Bank Asia</h2>
+      <h3>Shahapur Bazar, Chatkhil, Noakhali.</h3>
+      <h3>Our Office Page</h3>
+    </div>
+  </header>
+
+
+
+  <section>
+    <div class="Top_Menu_Section">
+      <a href="./index.html">Home</a>
+      <a href="./AC_Print.html" class="Active">Account Print</a>
+      <a href="./Remittance_Calculation.html">Remittance Calculation</a>
+      <a href="./DPS.html">DPS</a>
+      <a href="./FDR.html">FDR</a>
+      <a href="https://bank-asia.netlify.app/" target="_blank">Public Home</a>
+    </div>
+  </section>
 
 
 
 
-    <section class="BG_light">
-      <div class="Footer">
-        © 2023. All rights reserved by 
-        <a href="https://adibrasel.github.io/My_Portfolio/" class="text-bold" target="_blank">
-            Rasel Hossain
-        </a>
+
+
+
+
+
+
+
+  <div class="container">
+
+    <!-- Old Design Start  -->
+    <!-- <div class="col-md-5 left_side">
+      <p>Account Information</p>
+
+      <label>Account Number:</label>
+      <input id="AC_No_Input" class="form-control" type="number" placeholder="Account Number"> <br>
+
+      <label>Account Name:</label>
+      <input id="AC_Title_Input" class="form-control" type="text" placeholder="Account Name"> <br>
+
+      <label>Mobile Number:</label>
+      <input id="AC_Mobile_No_Input" class="form-control" type="number" placeholder="Mobile Number"> <br>
+
+      <button onclick="Submit()" class="btn btn-primary">Submit</button>
+      <button onclick="Print('Print_Section')" class="btn btn-primary">Print</button>
+
+    </div>
+
+    <div id="Print_Section" class="Print_Section Bg_white">
+      <div class="Print_Size">
+        <div class="Title Bg_white">
+          <div class="Left_Side Bg_white">
+            <img class='Logo Bg_white' src="./Bank_Asia_Logo_Print.jpg" alt="Bank Asia" />
+          </div>
+          <div class="Right_Side Bg_white">
+            <div class="AgentBanking Bg_white">Agent Banking</div>
+            <div class="Address Bg_white">Shahapur Bazar, Chatkhil, Noakhali</div>
+          </div>
+        </div>
+
+        <div class="Ac_Info --Account Information start this is comment--">
+          
+          <img src="./Ac_Info.JPG" alt="">
+        </div>
+        <div class="Dynamic_Text Bg_white">
+          <table>
+            <tr>
+              <td>
+                <div class="AC_Title Bg_white">Account Name</div>
+              </td>
+              <td>
+                <div class="Dynamic_AC_Info" id='AC_Title_Show'></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="AC_No Bg_white">Account Number</div>
+              </td>
+              <td>
+                <div class="Dynamic_AC_Info" id='AC_No_Show'></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="AC_Mobile_No Bg_white">A/C Mobile No</div>
+              </td>
+              <td>
+                <div class="Dynamic_AC_Info" id='AC_Mobile_No_Show'></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="Emergency_Text Bg_white">
+          Routing Number : <strong class='Bg_white'>070270602</strong> <br />
+          Branch Name : <strong class='Bg_white'>Agent Banking</strong> <br />
+          Swift Code : <strong class='Bg_white'>BALBBDDH</strong> <br />
+          Emergency Contact : <strong class='Bg_white'>+8801711-055368, +8801720-126229</strong> <br>
+          E-mail : <strong class='Bg_white'>sahapurbazar.1946@gmail.com, borhanraju2008@gmail.com</strong>
+        </div>
+
       </div>
-    </section>
 
 
-    <script src="./script.js"></script>
+    </div> -->
+    <!-- Old Design End  -->
+
+
+
+    <!-- Notifaction start  -->
+    <div class="expiry-section">
+      <div class="cardAlart p-4 text-center">
+        <h2 class="text-danger mb-3">Link Expired!</h2>
+        <p class="text-muted">We're sorry, but the link has expired. Please click the button below to access the updated
+          link:</p>
+        <a href="https://bankacps.netlify.app/MyBank/BankAsiaSahapur" class="btn btn-primary btn-lg mt-3">Access
+          Updated Link</a>
+      </div>
+    </div>
+    <!-- Notifaction end -->
+
+
+  </div>
+
+
+
+
+
+  <section class="BG_light">
+    <div class="Footer">
+      © 2023. All rights reserved by
+      <a href="https://adibrasel.github.io/My_Portfolio/" class="text-bold" target="_blank">
+        Rasel Hossain
+      </a>
+    </div>
+  </section>
+
+
+  <script src="./script.js"></script>
 </body>
+
 </html>
